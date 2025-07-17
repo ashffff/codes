@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .main{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(3,300px);
+            /* margin: 10px; */
+         }
+         /* .box{
+             margin: 10px;
+             border: 1px solid red;
+             border-radius: 20px; */
+         /* } */
+         .box1{
+            /* grid-template-columns: 100px;
+            grid-template-rows: 300px; */
+            grid-column-start: 1;
+            grid-column-end: 4;
+            border: 1px solid red;
+            border-radius: 30px;
+            margin: 10px;
+         }
+         .box2{
+            border: 1px solid red;
+            border-radius: 30px;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            margin: 10px;
+         }
+         .box3{
+            border: 1px solid red;
+            border-radius: 30px;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            margin: 10px;
+         }
+         .box4{
+
+            border: 1px solid red;
+            border-radius: 30px;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            margin: 10px;
+         }
+         p{
+            color: red;
+            padding: 30px;
+            text-align: center;
+            /* text-align: justify; */
+         }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+    <div class="box1"><p>header</p></div>
+    <div class="box2"><p>main</p></div>
+    <div class="box3"><p class="pchange">sidebar</p></div>
+    <div class="box4"><p>footer</p></div>
+    </div>
+</body>
+</html>
